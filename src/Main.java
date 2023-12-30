@@ -4,12 +4,14 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+      LinkedList<Integer> list=new LinkedList<>();
+      list.addNode(6);
+      list.addNode(3);
+      list.addNode(9);
+      System.out.println("Original Linked List");
+      list.display();
+      list.revList();
+      System.out.println("Reversed Linked List");
+      list.display();
     }
 }
